@@ -1,6 +1,6 @@
 import xlsxwriter
 
-workbook = xlsxwriter.Workbook('memory_management_ex1.xlsx')
+workbook = xlsxwriter.Workbook('memory_management_ex1.xlsx',{'constant_memory': True})
 worksheet = workbook.add_worksheet()
 
 row_max=5
