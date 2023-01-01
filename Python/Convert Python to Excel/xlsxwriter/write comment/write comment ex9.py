@@ -1,6 +1,6 @@
 import xlsxwriter
 
-workbook = xlsxwriter.Workbook('write_comment_ex10.xlsx')
+workbook = xlsxwriter.Workbook('write_comment_ex9.xlsx')
 worksheet = workbook.add_worksheet()
 
 text = 'Formatted textbox'
