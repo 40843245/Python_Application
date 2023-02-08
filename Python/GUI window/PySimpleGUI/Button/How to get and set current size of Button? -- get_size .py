@@ -1,0 +1,24 @@
+import PySimpleGUI as sg
+
+submitButton="Submit"
+layout=[
+    [
+        sg.Input(key="-INPUT-"),
+        sg.Button(submitButton,key="-SUBMIT-",size=(40,1))
+    ]
+]
+window=sg.Window("Title"
+                 ,layout=layout
+                 ,resizable=True
+                 )
+
+
+while True:
+    event,values=window.read()
+    if event == "-SUBMIT-" :
+        print(window["-SUBMIT-"].get_size())
+    
+    if event == sg.WIN_CLOSED:
+        break
+
+window.close()
